@@ -4,7 +4,8 @@
 	<parent>
 		<groupId>br.com.changeit</groupId>
 		<artifactId>sample</artifactId>
-		<version>1.0.0</version>
+		<version>${application.version}</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>sample-ws</artifactId>
@@ -28,7 +29,7 @@
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>sample-negocio</artifactId>
-			<version>${application.version}</version>
+			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
 
