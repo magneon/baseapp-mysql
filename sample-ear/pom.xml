@@ -30,6 +30,12 @@
 				<version>${application.version}</version>
 				<type>ejb</type>
 			</dependency>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>sample-commons</artifactId>
+				<version>${application.version}</version>
+				<type>jar</type>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -52,6 +58,12 @@
 			<version>${application.version}</version>
 			<type>ejb</type>
 		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>sample-commons</artifactId>
+			<version>${application.version}</version>
+			<type>jar</type>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -67,20 +79,25 @@
 				
 					<modules>
 						<webModule>
-							<groupId>br.com.saraiva</groupId>
+							<groupId>${project.groupId}</groupId>
 							<artifactId>sample-ws</artifactId>
 							<contextRoot>/sample</contextRoot>
 						</webModule>
 						
 						<ejbModule>
-							<groupId>br.com.saraiva</groupId>
+							<groupId>${project.groupId}</groupId>
 							<artifactId>sample-negocio</artifactId>
 						</ejbModule>
 						
 						<ejbModule>
-							<groupId>br.com.saraiva</groupId>
+							<groupId>${project.groupId}</groupId>
 							<artifactId>sample-dao</artifactId>
 						</ejbModule>
+
+						<jarModule>
+							<groupId>${project.groupId}</groupId>
+							<artifactId>sample-commons</artifactId>
+						</jarModule>
 					</modules>
 				</configuration>
 			</plugin>

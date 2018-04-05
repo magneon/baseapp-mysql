@@ -13,6 +13,7 @@
 		<module>sample-ear</module>
 		<module>sample-negocio</module>
 		<module>sample-dao</module>
+		<module>sample-commons</module>
 	</modules>
 	
 	<properties>
