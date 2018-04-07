@@ -10,8 +10,6 @@
 	</parent>
 	
 	<name>sample-commons</name>
-	
-	<groupId>sample-commons</groupId>
 	<artifactId>sample-commons</artifactId>
 	
 	<build>

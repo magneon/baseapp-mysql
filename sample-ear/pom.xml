@@ -10,6 +10,17 @@
 	<artifactId>sample-ear</artifactId>
 	<packaging>ear</packaging>
 	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>${project.groupId}</groupId>
+				<artifactId>sample-dao</artifactId>
+				<version>${project.version}</version>
+				<type>ejb</type>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
