@@ -2,18 +2,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.changeit</groupId>
-	<artifactId>sample</artifactId>
+	<artifactId>baseapp</artifactId>
 	<version>${application.version}</version>
 	<packaging>pom</packaging>
 
-	<name>sample</name>
+	<name>baseapp</name>
 
 	<modules>
-		<module>sample-commons</module>
-		<module>sample-dao</module>
-		<module>sample-negocio</module>
-		<module>sample-ws</module>
-		<module>sample-ear</module>
+		<module>baseapp-commons</module>
+		<module>baseapp-dao</module>
+		<module>baseapp-negocio</module>
+		<module>baseapp-ws</module>
+		<module>baseapp-ear</module>
 	</modules>
 
 	<properties>
@@ -37,6 +37,24 @@
 			<version>7.0</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.9.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.9.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.9.4</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -47,8 +65,8 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>${maven.compiler.plugin.version}</version>
 					<configuration>
-						<source>${java.compiler.source.version}</source>
-						<target>${java.compiler.target.version}</target>
+						<source>1.8</source>
+						<target>1.8</target>
 					</configuration>
 				</plugin>
 			</plugins>
